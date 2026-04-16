@@ -1,0 +1,65 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
+import "animate.css";
+import "./Layout.css";
+
+function Layout() {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Update window width on resize
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
+  // Calculate main content margin based on sidebar state and screen size
+  const getMainContentMargin = () => {
+    if (windowWidth <= 768) {
+      return "0px";
+    } else {
+      return showSidebar ? "280px" : "60px";
+    }
+  };
+
+  return (
+    <div className="d-flex flex-column layout-wrapper" style={{ overflow: "hidden" }}>
+      <Navbar onToggleSidebar={toggleSidebar} />
+      <div className="d-flex flex-grow-1">
+        <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
+        <main
+          className="main-content flex-grow-1 animate__animated animate__fadeIn"
+          style={{
+            marginLeft: getMainContentMargin(),
+            // marginTop: "100px",
+            height: "calc(100vh - 100px)",
+            overflowY: "auto",
+            overflowX: "hidden",
+            position: "relative",
+            zIndex: 900,
+            transition: "margin-left 0.4s ease-in-out",
+          }}
+        >
+          <Container fluid className="py-4">
+            <Outlet />
+          </Container>
+        </main>
+      </div>
+    </div>
+  );
+}
+
+export default Layout;

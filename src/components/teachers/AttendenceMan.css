@@ -1,0 +1,139 @@
+.Kaani {
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Kastu {
+    padding: 20px;
+    background: linear-gradient(135deg, #272d31, #7091E6, #272d31);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Ka-mark,
+.Ka-att {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Ka-table {
+    border-collapse: collapse;
+    background: rgba(39, 45, 49, 0.8);
+    /* border-radius: 10px; */
+}
+
+.Ka-cus,
+.Ka-tr {
+    /* color: #ffffff; */
+    font-weight: bold;
+}
+
+.Ka-th {
+    padding: 12px;
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    background-color: #4C91B6 !important;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.Ka-th:hover {
+    background-color: #357a9d;
+}
+
+.Ka-td,
+.Ka-td1 {
+    padding: 10px;
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff !important;
+    background-color: #272d31a4 !important;
+}
+
+.Ka-P {
+    color: #ffffff;
+    background-color: #272d31;
+}
+
+.Ka-R {
+    border-color: #4C91B6;
+    color: #4C91B6;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.Ka-R:hover {
+    background-color: #4C91B6;
+    color: #ffffff;
+}
+
+.Ka-S,
+.Ka-down {
+    background-color: #4C91B6;
+    border-color: #4C91B6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.Ka-S:hover,
+.Ka-down:hover {
+    background-color: #357a9d;
+    transform: scale(1.05);
+}
+
+.Ka-prev {
+    padding: 20px;
+    background: linear-gradient(135deg, #272d31, #7091E6, #272d31);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Ka-search {
+    padding: 10px;
+    border: 1px solid #4C91B6;
+    border-radius: 5px;
+    background-color: #7091E6;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.Ka-search:hover {
+    border-color: #357a9d;
+    box-shadow: 0 0 6px rgba(76, 145, 182, 0.5);
+}
+
+.Ka-search:focus {
+    outline: none;
+    border-color: #357a9d;
+    box-shadow: 0 0 6px rgba(76, 145, 182, 0.5);
+}
+
+.Ka-tare {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    background: rgba(39, 45, 49, 0.8);
+}
+
+.Ka-in {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.Ka-in:hover {
+    background-color: rgba(76, 145, 182, 0.2);
+}

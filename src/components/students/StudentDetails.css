@@ -1,0 +1,284 @@
+StudentDetails.css
+
+/* General container */
+.student-details-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: transparent;
+  }
+
+  .student-row-align-center{
+    text-align: start;
+  }
+  
+  /* Card styling */
+  .student-card {
+    border-radius: 12px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    background-color: #F1F5F9;
+    transition: transform 0.2s ease;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Navigation tabs */
+  .student-nav-tabs {
+    background-color: #DBEAFE;
+    border-radius: 8px;
+    padding: 0.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .student-nav-tabs .nav-link {
+    color: #1E3A8A;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .student-nav-tabs .nav-link:hover {
+    color: #3B82F6;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .student-nav-tabs .nav-link.active {
+    color: #3B82F6;
+    background-color: #FFFFFF;
+    border-color: transparent;
+  }
+  
+  /* Buttons */
+  .student-btn-success {
+    background-color: #103db9;
+    border-color: #103db9;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .student-btn-success:hover {
+    background-color: #103db9;
+    border-color: #103db9;
+    transform: translateY(-1px);
+  }
+  
+  /* Tables */
+  .student-table-custom {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .student-table-custom thead {
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+  }
+  
+  .student-table-custom tbody tr {
+    transition: background-color 0.2s ease;
+  }
+  
+  .student-table-custom tbody tr:hover {
+    background-color: #EFF6FF;
+  }
+  
+  .student-table-custom tbody td {
+    color: #6B7280;
+    vertical-align: middle;
+    font-size: 0.9rem;
+  }
+  
+  /* Loading container */
+  .student-loading-container {
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(31, 38, 135, 0.1);
+  }
+  
+  /* Error/Warning alerts */
+  .student-error-alert {
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+  }
+  
+  /* ID card */
+  .student-id-card {
+    /* max-width: 320px; */
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .student-id-card .cardstyle {
+    background: linear-gradient(135deg, #BAC8D1, #90AAEE, #BAC8D1);
+    background-color: #BAC8D1; /* Fallback */
+    border: 2px solid #7091E6;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 8px auto;
+    width: 300px;
+    max-height: fit-content;
+    box-shadow: 0 4px 12px rgba(31, 38, 135, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .student-id-card .cardstyle:hover {
+    transform: scale(1.02);
+  }
+  
+  .student-id-card .rounded-circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #7091E6;
+    object-fit: cover;
+  }
+  
+  /* Typography */
+  .student-text-secondary {
+    color: #1E3A8A;
+  }
+  
+  .student-text-muted {
+    color: #6B7280;
+  }
+  
+  .student-text-light {
+    color: #E5E7EB;
+  }
+  
+  /* Responsive adjustments */
+  
+  /* Screens 320px and smaller */
+  @media (max-width: 320px) {
+    .student-details-container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  
+    .student-card {
+      border-radius: 8px;
+    }
+  
+    .student-nav-tabs {
+      padding: 0.25rem;
+    }
+  
+    .student-nav-tabs .nav-link {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .student-btn-success {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    .student-text-secondary h2 {
+      font-size: 1.5rem;
+    }
+  
+    .student-text-secondary h4 {
+      font-size: 1.25rem;
+    }
+  
+    .student-text-secondary h5 {
+      font-size: 1.1rem;
+    }
+  
+    .student-table-custom {
+      font-size: 0.85rem;
+    }
+  
+    .student-id-card .cardstyle {
+      width: 100%;
+      margin: 5px auto;
+      padding: 8px;
+    }
+  
+    .student-id-card .rounded-circle {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .student-id-card .IdCard {
+      max-height: fit-content;
+    }
+  }
+  
+  /* Screens between 321px and 480px (larger phones) */
+  @media (min-width: 321px) and (max-width: 480px) {
+    .student-details-container {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  
+    .student-id-card .cardstyle {
+      width: 90%;
+      margin: 8px auto;
+      padding: 10px;
+    }
+  
+    .student-id-card .rounded-circle {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .student-id-card .IdCard {
+      max-height: fit-content;
+    }
+  }
+  
+  /* Screens between 481px and 768px (tablets) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .student-id-card .cardstyle {
+      width: 80%;
+      margin: 10px auto;
+      padding: 12px;
+    }
+  
+    .student-id-card .rounded-circle {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .student-id-card .IdCard {
+      max-height: fit-content;
+    }
+  }
+  
+  /* Screens between 769px and 1024px (small desktops) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .student-nav-tabs .nav-link {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+  
+    .student-id-card .cardstyle {
+      width: 300px;
+      margin: 10px auto;
+    }
+  }
+  
+  /* Additional responsive adjustments */
+  @media (max-width: 768px) {
+    .student-row-align-center {
+      text-align: center;
+    }
+  
+    .student-text-end {
+      text-align: center !important;
+    }
+  }

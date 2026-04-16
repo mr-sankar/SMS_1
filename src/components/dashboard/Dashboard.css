@@ -1,0 +1,7 @@
+.admin-title {
+    font-size: clamp(1.25rem, 4vw, 3rem);
+    color: #0000ff;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+  }
