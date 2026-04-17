@@ -13,10 +13,12 @@ import {
 import axios from "axios";
 import "./TeacherDetails.css";
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 function TeacherDetails() {
   const [teacherDetails, setTeacherDetails] = useState(null);
