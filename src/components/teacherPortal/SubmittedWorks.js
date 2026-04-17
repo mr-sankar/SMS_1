@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { Alert, Button, Table } from 'react-bootstrap';
 import "./Submit.css"
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 function SubmittedWorks() {
   const [submittedAssignments, setSubmittedAssignments] = useState([]);
