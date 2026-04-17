@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Add useNavigate
 import Swal from 'sweetalert2';
 import './BranchList.css';
-const BASE_URL =
-  process.env.NODE_ENV === 'production'
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === 'production'
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 // console.log("kamal", BASE_URL, process.env.NODE_ENV);
 
