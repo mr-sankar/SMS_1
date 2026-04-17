@@ -6,10 +6,12 @@ import { FaCheck, FaDownload } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./AttendenceMan.css";
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const StudManage = ({ teacherEmail }) => {
   const [attendance, setAttendance] = useState([]);
