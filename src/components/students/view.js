@@ -22,10 +22,12 @@ import { toast } from 'react-toastify';
 
 // const API_BASE_URL = 'http://localhost:5000/api';
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const getAuthConfig = () => {
   const token = localStorage.getItem('token');
