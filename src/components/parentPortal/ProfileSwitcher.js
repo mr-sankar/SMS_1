@@ -28,10 +28,12 @@ const AnimatedSelect = styled(Select)(({ theme }) => ({
   },
 }));
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const ProfileSwitcher = ({ parentId, onChildSelect, selectedChildId }) => {
   const [children, setChildren] = useState([]);
