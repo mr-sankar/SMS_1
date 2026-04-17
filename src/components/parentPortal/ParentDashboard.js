@@ -32,10 +32,12 @@ import { LocalizationProvider, DateCalendar, PickersDay } from "@mui/x-date-pick
 import { format, isSameDay, isValid, isSameMonth, getMonth, getYear, startOfMonth } from "date-fns";
 import { motion, AnimatePresence } from "framer-motion";
 
-const BASE_URL = 
-process.env.NODE_ENV === "production"
-? process.env.REACT_APP_API_DEPLOYED_URL
-: process.env.REACT_APP_API_URL;
+// const BASE_URL = 
+// process.env.NODE_ENV === "production"
+// ? process.env.REACT_APP_API_DEPLOYED_URL
+// : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
