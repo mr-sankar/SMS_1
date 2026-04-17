@@ -9,10 +9,12 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import background from "../../assests/images/login.png";
 
 // Define BASE_URL based on environment
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const styles = `
   input[type="password"]::-ms-reveal,
