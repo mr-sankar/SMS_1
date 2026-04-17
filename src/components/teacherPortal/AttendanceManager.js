@@ -3,10 +3,12 @@ import { Card, Form, Button, Table, Alert, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import axios from "axios";
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 function AttendanceManager() {
   const [students, setStudents] = useState([]);
