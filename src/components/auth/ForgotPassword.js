@@ -7,10 +7,12 @@ import { Alert, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import background from "../../assests/images/login.png";
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const styles = `
   .auth-page {
