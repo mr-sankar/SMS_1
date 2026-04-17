@@ -20,7 +20,7 @@ import jsPDF from "jspdf";
 //     ? process.env.REACT_APP_API_DEPLOYED_URL
 //     : process.env.REACT_APP_API_URL;
 
-
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const Receipt = () => {
   const { receiptId } = useParams();
