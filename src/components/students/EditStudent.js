@@ -5,10 +5,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
 import { FaTimes } from "react-icons/fa";
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const getAuthConfig = () => {
   const token = localStorage.getItem("token");
