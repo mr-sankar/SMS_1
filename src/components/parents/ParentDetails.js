@@ -11,10 +11,12 @@ import {
   KeyRound
 } from "lucide-react";
 
-const BASE_URL = 
-process.env.NODE_ENV === "production"
-? process.env.REACT_APP_API_DEPLOYED_URL
-: process.env.REACT_APP_API_URL || 'http://localhost:5000';
+// const BASE_URL = 
+// process.env.NODE_ENV === "production"
+// ? process.env.REACT_APP_API_DEPLOYED_URL
+// : process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const ParentDetails = ({ parent, onBack, role = "parent" }) => {
   const navigate = useNavigate();
