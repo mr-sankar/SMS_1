@@ -3,10 +3,12 @@ import axios from "axios";
 import { Tabs, Tab, Form, Button, Card, Alert, ListGroup, Spinner } from "react-bootstrap";
 import "./notification.css";
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const Notification = () => {
   const [message, setMessage] = useState("");
