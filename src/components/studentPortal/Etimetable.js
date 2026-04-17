@@ -3,10 +3,12 @@ import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { Alert, Card, Col, Container, Row, Table } from 'react-bootstrap';
 import { FaBook, FaCalendarAlt, FaClock, FaUser } from 'react-icons/fa';
 
-const BASE_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_API_DEPLOYED_URL
-    : process.env.REACT_APP_API_URL;
+// const BASE_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.REACT_APP_API_DEPLOYED_URL
+//     : process.env.REACT_APP_API_URL;
+
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 function Etimetable() {
   const [studentData, setStudentData] = useState(null);
